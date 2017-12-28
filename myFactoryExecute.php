@@ -5,6 +5,9 @@ use App\MyFactory\MyFactory;
 
 
 $myFactory = new MyFactory;
-var_dump($myFactory->create('sp'));
-var_dump($myFactory->create('RJ'));
-var_dump($myFactory->create('PE'));
+$sp = $myFactory->create('sp');
+$rj = $myFactory->create('RJ');
+
+var_dump($sp->capital());
+var_dump($rj->capital());
+#var_dump($myFactory->create('PE'));

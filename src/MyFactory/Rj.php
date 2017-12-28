@@ -2,7 +2,12 @@
 
 namespace App\MyFactory;
 
-class Rj
+class Rj implements IState
 {
+
+  public function capital()
+  {
+    return "Rio de Janeiro";
+  }
 
 }
